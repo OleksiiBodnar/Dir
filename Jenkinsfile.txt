@@ -5,5 +5,11 @@ node{
         git url: 'https://github.com/OleksiiBodnar/Dir.git', branch: 'main'
      }    
     }
+agent {
+    label 'pi'
+}
+steps {
+   sh 'docker pull us.gcr.io/gcp101233-lv61301devops/app-images/teach_back-image:0.6' 
+}
 
 
