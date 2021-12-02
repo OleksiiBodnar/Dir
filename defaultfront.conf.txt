@@ -1,0 +1,11 @@
+upstream appf {
+    server 34.123.64.22:8292;
+    server 34.123.64.22:8293;
+       
+    }
+server {
+    listen 80;
+    location / {
+        proxy_pass http://appf$request_uri;
+    }
+}
