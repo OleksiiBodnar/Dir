@@ -16,7 +16,7 @@ services:
     environment:
       main_ip: 34.123.64.22
     ports:
-    - 3000-3100:3000 
+    - 8292-8293:3000 
     depends_on:
     - teachback
   nginx: 
