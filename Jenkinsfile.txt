@@ -10,13 +10,7 @@ pipeline {
                 git url: 'https://github.com/OleksiiBodnar/Dir.git', branch: 'main'
            }
        }
-    
-       stage('docker-compose build') {
-           steps {
-              echo "docker-compose build start ..."
-              sh "docker-compose build"
-           }
-       }
+           
        stage('docker-compose up') {
            steps {
               echo "docker-compose up start ..."
